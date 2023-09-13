@@ -632,6 +632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 669884934}
   - component: {fileID: 669884933}
+  - component: {fileID: 669884935}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -693,6 +694,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669884935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669884932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5314f52e56c28bb4ca6e7cdb94227d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &969183321
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,7 +839,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058353683}
-  m_LocalRotation: {x: 0.05502403, y: 0.019577099, z: -0.0010790534, w: 0.9982925}
+  m_LocalRotation: {x: 0.05502403, y: 0.019577095, z: -0.0010790532, w: 0.9982925}
   m_LocalPosition: {x: -0.6387186, y: 2.3013663, z: -16.278786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1205,7 +1218,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740731941}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 12499ece174e6b74c9ad9c96dda8efa5, type: 2}
   m_CullingMode: 0
