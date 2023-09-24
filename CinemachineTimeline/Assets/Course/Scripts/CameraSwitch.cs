@@ -18,9 +18,6 @@ public class CameraSwitch : MonoBehaviour
         if (_cameraIndex > cameras.Length - 1)
             _cameraIndex = 0;
 
-
-
-
         if (Input.GetKeyDown(KeyCode.R))
         _cameraIndex++;
 
@@ -53,11 +50,6 @@ public class CameraSwitch : MonoBehaviour
                 cameras[2].gameObject.SetActive(false);
                 cameras[3].gameObject.SetActive(true);
                 break;
-
-
         }
-
-
-
     }
 }
