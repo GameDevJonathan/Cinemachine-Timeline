@@ -49,7 +49,7 @@ MonoBehaviour:
   - m_From: CM BlendCam3
     m_To: CM BlendCam4
     m_Blend:
-      m_Style: 1
+      m_Style: 0
       m_Time: 5
       m_CustomCurve:
         serializedVersion: 2
