@@ -312,6 +312,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &635605810 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6347797813192735005, guid: b55081d601205a84d93d4b41d28df200, type: 3}
+  m_PrefabInstance: {fileID: 1979584559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &808031816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -465,7 +470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3468076908074443991, guid: adb668e438f22104499279bd0f2e52a6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4
+      value: -0.55669117
       objectReference: {fileID: 0}
     - target: {fileID: 3468076908074443991, guid: adb668e438f22104499279bd0f2e52a6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -695,6 +700,8 @@ PlayableDirector:
     value: {fileID: 1920119336}
   - key: {fileID: -4803648820822312042, guid: 3f27d407c0cb2d747a46548bcd1e1eef, type: 2}
     value: {fileID: 3644383823797347697}
+  - key: {fileID: -7609031102241886287, guid: 3f27d407c0cb2d747a46548bcd1e1eef, type: 2}
+    value: {fileID: 635605810}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2044722380
