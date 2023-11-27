@@ -276,6 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playableDirector: {fileID: 2044722379}
+  _playerInput: {fileID: 654949426}
 --- !u!65 &520667729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -317,6 +318,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 6347797813192735005, guid: b55081d601205a84d93d4b41d28df200, type: 3}
   m_PrefabInstance: {fileID: 1979584559}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &654949426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 413227267831314897, guid: b55081d601205a84d93d4b41d28df200, type: 3}
+  m_PrefabInstance: {fileID: 1979584559}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &808031816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -470,7 +482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3468076908074443991, guid: adb668e438f22104499279bd0f2e52a6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.55669117
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 3468076908074443991, guid: adb668e438f22104499279bd0f2e52a6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -608,6 +620,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 413227267831314897, guid: b55081d601205a84d93d4b41d28df200, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9072392750386450581, guid: b55081d601205a84d93d4b41d28df200, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -672,6 +688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2044722380}
   - component: {fileID: 2044722379}
+  - component: {fileID: 2044722381}
   m_Layer: 0
   m_Name: ChestDirector
   m_TagString: Untagged
@@ -722,6 +739,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &2044722381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044722378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 900b1788dc1053146a35cd72468184a6, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 520667728}
+          m_TargetAssemblyTypeName: TimelineTrigger, Assembly-CSharp
+          m_MethodName: StopInput
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 520667728}
+          m_TargetAssemblyTypeName: TimelineTrigger, Assembly-CSharp
+          m_MethodName: EnableInput
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1629327931911450210
 Transform:
   m_ObjectHideFlags: 0
